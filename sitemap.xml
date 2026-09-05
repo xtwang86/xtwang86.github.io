@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+  </url><url>
+    <loc>/service_ai/</loc>
+  </url><url>
+    <loc>/blog/</loc>
+  </url><url>
+    <loc>/blog/first/</loc>
+  </url><url>
+    <loc>/service_power_automate/</loc>
+  </url><url>
+    <loc>/service_ses/</loc>
+  </url><url>
+    <loc>/service_uipath/</loc>
+  </url><url>
+    <loc>/recruit_intern/</loc>
+  </url><url>
+    <loc>/message/</loc>
+  </url><url>
+    <loc>/recruit_se/</loc>
+  </url><url>
+    <loc>/recruit_pm/</loc>
+  </url><url>
+    <loc>/company/</loc>
+  </url><url>
+    <loc>/recruit/</loc>
+  </url>
+</urlset>

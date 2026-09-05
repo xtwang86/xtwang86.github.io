@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+<meta property="og:url" content="//localhost:1313/service_powerautomate/">
+  <meta property="og:site_name" content="AIBIRCK株式会社">
+  <meta property="og:title" content="Power Automate開発支援サービス">
+  <meta property="og:description" content="＜Power Automate開発支援サービス＞ Power Automateについて（AIBRICKの理解） Power Automateは、Microsoft社が提供する業務自動化ツールで、以下の2種類で構成されています。
+Power Automate クラウドフロー Power Automate for Desktop Power Automate クラウドフロー Web上でコネクタ（API）を組み合わせてフローを構築するツールです。
+対象：Microsoft 365を導入している企業様、または対象システムがコネクタを提供している企業様 メリット： フロー実行時にローカル環境を常時起動する必要がなく、処理はすべてクラウド上で実行 UI操作を伴わないため、フローの安定性が高い Power Automate for Desktop ローカル環境で自動化フローを構築するツールです。
+対象：レガシーシステムやAPIを提供していないシステムの自動化に最適 メリット： 人間の操作に近い感覚で自動化が可能 直感的な操作で、一般ユーザーでも簡単に開発・改修・メンテナンスが可能 AIBRICKが提供するサービス AIBRICKは、クラウドフローとDesktopの両方に対応し、以下の支援を提供しています。
+要件定義、開発、保守のトータルサポート 他のRPAツールで構築されたフローのPower Automateへの移行支援 上記以外にも、Power Automateに関する幅広いご相談に対応">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AIBIRCK株式会社</title>
+    
+  
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Meiryo&#43;UI:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+  
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/aib.svg" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-secondary">
+            ホーム
+          </a>
+          <a href="/message" class="navbar-item is-secondary">
+            メッセージ
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              サービス
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/" class="navbar-item">
+                Power Automate開発支援
+              </a>
+              <a href="/" class="navbar-item">
+                UiPath開発支援
+              </a>
+              <a href="/" class="navbar-item">
+                AI活用支援
+              </a>
+              <a href="/" class="navbar-item">
+                SESサービス
+              </a>
+            </div>
+          </div>
+          <a href="/company" class="navbar-item is-secondary">
+            会社概要
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              採用情報
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/recruit_pm" class="navbar-item">
+                プロジェクトマネージャー
+              </a>
+              <a href="/recruit_se" class="navbar-item">
+                ソリューションエンジニア
+              </a>
+              <a href="/recruit_intern" class="navbar-item">
+                インターンシップ生
+              </a>
+            </div>
+          </div>
+          <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              お問い合わせ
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/aib.svg" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-secondary">
+          ホーム
+        </a>
+        <a href="/message" class="navbar-item is-secondary">
+          メッセージ
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            サービス
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/" class="navbar-item">
+              Power Automate開発支援
+            </a>
+            <a href="/" class="navbar-item">
+              UiPath開発支援
+            </a>
+            <a href="/" class="navbar-item">
+              AI活用支援
+            </a>
+            <a href="/" class="navbar-item">
+              SESサービス
+            </a>
+          </div>
+        </div>
+        <a href="/company" class="navbar-item is-secondary">
+          会社概要
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            採用情報
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/recruit_pm" class="navbar-item">
+              プロジェクトマネージャー
+            </a>
+            <a href="/recruit_se" class="navbar-item">
+              ソリューションエンジニア
+            </a>
+            <a href="/recruit_intern" class="navbar-item">
+              インターンシップ生
+            </a>
+          </div>
+        </div>
+        <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            お問い合わせ
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Power Automate開発支援サービス</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 id="power-automate開発支援サービス">＜Power Automate開発支援サービス＞</h1>
+<h2 id="power-automateについてaibrickの理解">Power Automateについて（AIBRICKの理解）</h2>
+<p>Power Automateは、Microsoft社が提供する業務自動化ツールで、以下の2種類で構成されています。</p>
+<ol>
+<li><strong>Power Automate クラウドフロー</strong></li>
+<li><strong>Power Automate for Desktop</strong></li>
+</ol>
+<hr>
+<h2 id="power-automate-クラウドフロー">Power Automate クラウドフロー</h2>
+<p>Web上でコネクタ（API）を組み合わせてフローを構築するツールです。</p>
+<ul>
+<li><strong>対象</strong>：Microsoft 365を導入している企業様、または対象システムがコネクタを提供している企業様</li>
+<li><strong>メリット</strong>：
+<ul>
+<li>フロー実行時にローカル環境を常時起動する必要がなく、処理はすべてクラウド上で実行</li>
+<li>UI操作を伴わないため、フローの安定性が高い</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="power-automate-for-desktop">Power Automate for Desktop</h2>
+<p>ローカル環境で自動化フローを構築するツールです。</p>
+<ul>
+<li><strong>対象</strong>：レガシーシステムやAPIを提供していないシステムの自動化に最適</li>
+<li><strong>メリット</strong>：
+<ul>
+<li>人間の操作に近い感覚で自動化が可能</li>
+<li>直感的な操作で、一般ユーザーでも簡単に開発・改修・メンテナンスが可能</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="aibrickが提供するサービス">AIBRICKが提供するサービス</h2>
+<p>AIBRICKは、クラウドフローとDesktopの両方に対応し、以下の支援を提供しています。</p>
+<ul>
+<li>要件定義、開発、保守のトータルサポート</li>
+<li>他のRPAツールで構築されたフローのPower Automateへの移行支援</li>
+<li>上記以外にも、Power Automateに関する幅広いご相談に対応</li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+  
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/aib_footer.png">
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>サービス</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/">
+                  Power Automate開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  UiPath開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  AI活用支援
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  SESサービス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>会社概要</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/message">
+                  メッセージ
+                </a>
+              </li>
+              <li>
+                <a href="/company#access">
+                  アクセス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>採用情報</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/recruit_pm">
+                  プロジェクトマネージャー
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_se">
+                  ソリューションエンジニア
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_intern">
+                  インターンシップ生
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-wechat"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-weibo"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+              </div>
+            </nav>
+            <a href="https://bulma.io" target="_blank">
+              <img src="/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  
+
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  </body>
+</html>

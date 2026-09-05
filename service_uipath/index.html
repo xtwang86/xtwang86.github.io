@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+
+<meta property="og:url" content="/service_uipath/">
+  <meta property="og:site_name" content="AIBRICK株式会社 ｜ 知能化・自動化・DX">
+  <meta property="og:title" content="UiPath開発支援サービス">
+  <meta property="og:description" content="💡 UiPathについて（AIBRICKの理解） UiPathは、世界150か国以上で導入されているグローバルRPAプラットフォームです。 大規模な業務プロセスの自動化に強みを持ち、AIやOCRとの統合により複雑な業務にも対応可能です。 豊富な開発リソースと活発なユーザーコミュニティに支えられ、企業のDX推進を加速させます。 Studio（開発環境）、Orchestrator（管理ツール）、Robot（実行エージェント）を組み合わせることで、開発から運用までを一貫してサポートします。
+対象：
+レガシーシステムやAPI非対応システムを抱える企業様 紙文書や画像データを扱う業務が多い企業様 メリット：
+レガシーシステムの画面操作を模倣することに優れており、古い環境でも安定した自動化が可能 OCRやコンピュータビジョンを活用した画像認識に強く、紙文書や非構造化データの処理に優れる Robotによるアテンド型／アンアテンド型の柔軟な実行方式に対応 🤝 AIBRICKの支援内容 AIBRICKは、UiPath導入から運用までをトータルでサポートいたします。
+要件定義・業務分析：自動化対象業務の選定、ROI試算 開発・構築支援：UiPath Studioを用いたフロー設計・開発 移行支援：既存RPAツールからUiPathへの移行プロジェクト対応 教育・トレーニング：ユーザー向け研修、運用担当者育成 保守・運用支援：フローの監視、改修、継続的改善 🚀 導入効果 UiPathを導入することで、企業様は以下の成果を期待できます。
+業務効率化：複雑な業務も自動化し、作業時間を大幅削減 コスト削減：人件費やシステム運用コストの圧縮 品質向上：人為的ミスを防止し、業務の正確性を確保 DX推進：グローバル標準のRPA基盤を活用し、組織全体の変革を加速 🌟 AIBRICKの強み AI × RPAの融合：UiPathとAI技術を組み合わせ、より高度な自動化を実現 多言語対応：日本語・中国語・英語でのドキュメント作成やサポートに対応 柔軟な支援体制：スタートアップならではの迅速かつ柔軟な対応、グローバル展開を視野に入れた設計">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AIBRICK株式会社 ｜ 知能化・自動化・DX</title>
+    
+  
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Meiryo&#43;UI:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.7fc191db3122a1a4051cd0786268429ca54600e52cc104ea61972f854885d966.css" integrity="sha256-f8GR2zEioaQFHNB4YmhCnKVGAOUswQTqYZcvhUiF2WY=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+  
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/AIBRICK_orange.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-secondary">
+            ホーム
+          </a>
+          <a href="/message" class="navbar-item is-secondary">
+            メッセージ
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              サービス
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/service_power_automate" class="navbar-item">
+                Power Automate開発支援
+              </a>
+              <a href="/service_uipath" class="navbar-item">
+                UiPath開発支援
+              </a>
+              <a href="/service_ai" class="navbar-item">
+                AI活用支援
+              </a>
+              <a href="/service_ses" class="navbar-item">
+                SESサービス
+              </a>
+            </div>
+          </div>
+          <a href="/company" class="navbar-item is-secondary">
+            会社概要
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              採用情報
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/recruit_pm" class="navbar-item">
+                プロジェクトマネージャー
+              </a>
+              <a href="/recruit_se" class="navbar-item">
+                ソリューションエンジニア
+              </a>
+              <a href="/recruit_intern" class="navbar-item">
+                インターンシップ生
+              </a>
+            </div>
+          </div>
+          <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              お問い合わせ
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/AIBRICK_orange.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-secondary">
+          ホーム
+        </a>
+        <a href="/message" class="navbar-item is-secondary">
+          メッセージ
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            サービス
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/service_power_automate" class="navbar-item">
+              Power Automate開発支援
+            </a>
+            <a href="/service_uipath" class="navbar-item">
+              UiPath開発支援
+            </a>
+            <a href="/service_ai" class="navbar-item">
+              AI活用支援
+            </a>
+            <a href="/service_ses" class="navbar-item">
+              SESサービス
+            </a>
+          </div>
+        </div>
+        <a href="/company" class="navbar-item is-secondary">
+          会社概要
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            採用情報
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/recruit_pm" class="navbar-item">
+              プロジェクトマネージャー
+            </a>
+            <a href="/recruit_se" class="navbar-item">
+              ソリューションエンジニア
+            </a>
+            <a href="/recruit_intern" class="navbar-item">
+              インターンシップ生
+            </a>
+          </div>
+        </div>
+        <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            お問い合わせ
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">UiPath開発支援サービス</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 id="-uipathについてaibrickの理解">💡 UiPathについて（AIBRICKの理解）</h2>
+<p>UiPathは、世界150か国以上で導入されているグローバルRPAプラットフォームです。
+大規模な業務プロセスの自動化に強みを持ち、AIやOCRとの統合により複雑な業務にも対応可能です。
+豊富な開発リソースと活発なユーザーコミュニティに支えられ、企業のDX推進を加速させます。
+Studio（開発環境）、Orchestrator（管理ツール）、Robot（実行エージェント）を組み合わせることで、開発から運用までを一貫してサポートします。</p>
+<ul>
+<li>
+<p><strong>対象</strong>：</p>
+<ul>
+<li>レガシーシステムやAPI非対応システムを抱える企業様</li>
+<li>紙文書や画像データを扱う業務が多い企業様</li>
+</ul>
+</li>
+<li>
+<p><strong>メリット</strong>：</p>
+<ul>
+<li>レガシーシステムの画面操作を模倣することに優れており、古い環境でも安定した自動化が可能</li>
+<li>OCRやコンピュータビジョンを活用した画像認識に強く、紙文書や非構造化データの処理に優れる</li>
+<li>Robotによるアテンド型／アンアテンド型の柔軟な実行方式に対応</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-aibrickの支援内容">🤝 AIBRICKの支援内容</h2>
+<p>AIBRICKは、UiPath導入から運用までをトータルでサポートいたします。</p>
+<ul>
+<li><strong>要件定義・業務分析</strong>：自動化対象業務の選定、ROI試算</li>
+<li><strong>開発・構築支援</strong>：UiPath Studioを用いたフロー設計・開発</li>
+<li><strong>移行支援</strong>：既存RPAツールからUiPathへの移行プロジェクト対応</li>
+<li><strong>教育・トレーニング</strong>：ユーザー向け研修、運用担当者育成</li>
+<li><strong>保守・運用支援</strong>：フローの監視、改修、継続的改善</li>
+</ul>
+<hr>
+<h2 id="-導入効果">🚀 導入効果</h2>
+<p>UiPathを導入することで、企業様は以下の成果を期待できます。</p>
+<ul>
+<li><strong>業務効率化</strong>：複雑な業務も自動化し、作業時間を大幅削減</li>
+<li><strong>コスト削減</strong>：人件費やシステム運用コストの圧縮</li>
+<li><strong>品質向上</strong>：人為的ミスを防止し、業務の正確性を確保</li>
+<li><strong>DX推進</strong>：グローバル標準のRPA基盤を活用し、組織全体の変革を加速</li>
+</ul>
+<hr>
+<h2 id="-aibrickの強み">🌟 AIBRICKの強み</h2>
+<ul>
+<li><strong>AI × RPAの融合</strong>：UiPathとAI技術を組み合わせ、より高度な自動化を実現</li>
+<li><strong>多言語対応</strong>：日本語・中国語・英語でのドキュメント作成やサポートに対応</li>
+<li><strong>柔軟な支援体制</strong>：スタートアップならではの迅速かつ柔軟な対応、グローバル展開を視野に入れた設計</li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+  
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/AIBRICK_orange.png">
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>サービス</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/service_power_automate">
+                  Power Automate開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_uipath">
+                  UiPath開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_ai">
+                  AI活用支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_ses">
+                  SESサービス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>会社概要</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/message">
+                  メッセージ
+                </a>
+              </li>
+              <li>
+                <a href="/company#access">
+                  アクセス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>採用情報</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/recruit_pm">
+                  プロジェクトマネージャー
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_se">
+                  ソリューションエンジニア
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_intern">
+                  インターンシップ生
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-wechat"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-weibo"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+              </div>
+            </nav>
+            <a href="https://bulma.io" target="_blank">
+              <img src="/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  
+
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  </body>
+</html>

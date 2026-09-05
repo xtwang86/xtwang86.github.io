@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+
+<meta property="og:url" content="/service_power_automate/">
+  <meta property="og:site_name" content="AIBRICK株式会社 ｜ 知能化・自動化・DX">
+  <meta property="og:title" content="Power Automate開発支援サービス">
+  <meta property="og:description" content="💡 Power Automateについて（AIBRICKの理解） Power Automateは、Microsoft社が提供する業務自動化プラットフォームであり、企業のDX推進を支援する重要なツールです。
+Power Automateには、以下の2種類があります。
+Power Automate Cloud flows：クラウド上でコネクタ（API）を組み合わせて動作 Power Automate for desktop (PAD)：ローカル環境で人間の操作を模倣して動作 🔹 Power Automate Cloud flows クラウド上でコネクタ（API）を組み合わせてフローを構築するツールです。
+対象：Microsoft 365を導入している企業様、または対象システムがコネクタを提供している企業様 メリット： ローカル環境を常時起動する必要がなく、処理はすべてクラウド上で実行可能 UI操作を伴わないため、システム変更の影響を受けにくく、安定性が高い 豊富なコネクタにより、外部サービスとの連携が容易 🔹 Power Automate for desktop (PAD) ローカル環境で自動化フローを構築するツールです。
+対象：レガシーシステムやAPI非対応システムの自動化に最適 メリット： 人間の操作を模倣する形で自動化が可能 直感的な操作性により、一般ユーザーでも簡易的な開発・改修・メンテナンスが可能 Windows環境に標準搭載されており、導入コストを抑えられる 🤝 AIBRICKの支援内容 AIBRICKは、クラウドフローとデスクトップの両方に対応し、以下の支援を提供しております。
+要件定義から開発・保守までの包括的なサポート 他RPAツールで構築されたフローのPower Automateへの移行支援 上記以外にも、Power Automateに関する幅広いご相談への対応 🚀 導入効果 Power Automateを導入することで、企業様は以下の効果を期待できます。
+業務効率化：定型業務の自動化による工数削減 コスト削減：IT部門への依存軽減、開発コストの圧縮 品質向上：人為的ミスの削減、安定したフロー運用 DX推進：現場主導で改善を進める文化の醸成 🌟 AIBRICKの強み AI × RPAの融合：単純な自動化に留まらず、AIによる高度な判断を組み合わせ可能 多言語対応：日本語・中国語・英語でのドキュメント作成やサポートに対応 柔軟な支援体制：スタートアップならではの迅速かつ柔軟な対応、グローバル展開を視野に入れた設計">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AIBRICK株式会社 ｜ 知能化・自動化・DX</title>
+    
+  
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Meiryo&#43;UI:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.7fc191db3122a1a4051cd0786268429ca54600e52cc104ea61972f854885d966.css" integrity="sha256-f8GR2zEioaQFHNB4YmhCnKVGAOUswQTqYZcvhUiF2WY=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+    
+
+    
+
+  
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/AIBRICK_orange.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="/" class="navbar-item is-secondary">
+            ホーム
+          </a>
+          <a href="/message" class="navbar-item is-secondary">
+            メッセージ
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              サービス
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/service_power_automate" class="navbar-item">
+                Power Automate開発支援
+              </a>
+              <a href="/service_uipath" class="navbar-item">
+                UiPath開発支援
+              </a>
+              <a href="/service_ai" class="navbar-item">
+                AI活用支援
+              </a>
+              <a href="/service_ses" class="navbar-item">
+                SESサービス
+              </a>
+            </div>
+          </div>
+          <a href="/company" class="navbar-item is-secondary">
+            会社概要
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              採用情報
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/recruit_pm" class="navbar-item">
+                プロジェクトマネージャー
+              </a>
+              <a href="/recruit_se" class="navbar-item">
+                ソリューションエンジニア
+              </a>
+              <a href="/recruit_intern" class="navbar-item">
+                インターンシップ生
+              </a>
+            </div>
+          </div>
+          <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              お問い合わせ
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/AIBRICK_orange.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-secondary">
+          ホーム
+        </a>
+        <a href="/message" class="navbar-item is-secondary">
+          メッセージ
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            サービス
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/service_power_automate" class="navbar-item">
+              Power Automate開発支援
+            </a>
+            <a href="/service_uipath" class="navbar-item">
+              UiPath開発支援
+            </a>
+            <a href="/service_ai" class="navbar-item">
+              AI活用支援
+            </a>
+            <a href="/service_ses" class="navbar-item">
+              SESサービス
+            </a>
+          </div>
+        </div>
+        <a href="/company" class="navbar-item is-secondary">
+          会社概要
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            採用情報
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/recruit_pm" class="navbar-item">
+              プロジェクトマネージャー
+            </a>
+            <a href="/recruit_se" class="navbar-item">
+              ソリューションエンジニア
+            </a>
+            <a href="/recruit_intern" class="navbar-item">
+              インターンシップ生
+            </a>
+          </div>
+        </div>
+        <a href="mailto:info@aibrick.co.jp" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            お問い合わせ
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Power Automate開発支援サービス</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 id="-power-automateについてaibrickの理解">💡 Power Automateについて（AIBRICKの理解）</h2>
+<p>Power Automateは、Microsoft社が提供する業務自動化プラットフォームであり、企業のDX推進を支援する重要なツールです。<br>
+Power Automateには、以下の2種類があります。</p>
+<ul>
+<li><strong>Power Automate Cloud flows</strong>：クラウド上でコネクタ（API）を組み合わせて動作</li>
+<li><strong>Power Automate for desktop (PAD)</strong>：ローカル環境で人間の操作を模倣して動作</li>
+</ul>
+<hr>
+<h3 id="-power-automate-cloud-flows">🔹 Power Automate Cloud flows</h3>
+<p>クラウド上でコネクタ（API）を組み合わせてフローを構築するツールです。</p>
+<ul>
+<li><strong>対象</strong>：Microsoft 365を導入している企業様、または対象システムがコネクタを提供している企業様</li>
+<li><strong>メリット</strong>：
+<ul>
+<li>ローカル環境を常時起動する必要がなく、処理はすべてクラウド上で実行可能</li>
+<li>UI操作を伴わないため、システム変更の影響を受けにくく、安定性が高い</li>
+<li>豊富なコネクタにより、外部サービスとの連携が容易</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="-power-automate-for-desktop-pad">🔹 Power Automate for desktop (PAD)</h3>
+<p>ローカル環境で自動化フローを構築するツールです。</p>
+<ul>
+<li><strong>対象</strong>：レガシーシステムやAPI非対応システムの自動化に最適</li>
+<li><strong>メリット</strong>：
+<ul>
+<li>人間の操作を模倣する形で自動化が可能</li>
+<li>直感的な操作性により、一般ユーザーでも簡易的な開発・改修・メンテナンスが可能</li>
+<li>Windows環境に標準搭載されており、導入コストを抑えられる</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-aibrickの支援内容">🤝 AIBRICKの支援内容</h2>
+<p>AIBRICKは、クラウドフローとデスクトップの両方に対応し、以下の支援を提供しております。</p>
+<ul>
+<li>要件定義から開発・保守までの包括的なサポート</li>
+<li>他RPAツールで構築されたフローのPower Automateへの移行支援</li>
+<li>上記以外にも、Power Automateに関する幅広いご相談への対応</li>
+</ul>
+<hr>
+<h2 id="-導入効果">🚀 導入効果</h2>
+<p>Power Automateを導入することで、企業様は以下の効果を期待できます。</p>
+<ul>
+<li><strong>業務効率化</strong>：定型業務の自動化による工数削減</li>
+<li><strong>コスト削減</strong>：IT部門への依存軽減、開発コストの圧縮</li>
+<li><strong>品質向上</strong>：人為的ミスの削減、安定したフロー運用</li>
+<li><strong>DX推進</strong>：現場主導で改善を進める文化の醸成</li>
+</ul>
+<hr>
+<h2 id="-aibrickの強み">🌟 AIBRICKの強み</h2>
+<ul>
+<li><strong>AI × RPAの融合</strong>：単純な自動化に留まらず、AIによる高度な判断を組み合わせ可能</li>
+<li><strong>多言語対応</strong>：日本語・中国語・英語でのドキュメント作成やサポートに対応</li>
+<li><strong>柔軟な支援体制</strong>：スタートアップならではの迅速かつ柔軟な対応、グローバル展開を視野に入れた設計</li>
+</ul>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+  
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/AIBRICK_orange.png">
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>サービス</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/service_power_automate">
+                  Power Automate開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_uipath">
+                  UiPath開発支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_ai">
+                  AI活用支援
+                </a>
+              </li>
+              <li>
+                <a href="/service_ses">
+                  SESサービス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>会社概要</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/message">
+                  メッセージ
+                </a>
+              </li>
+              <li>
+                <a href="/company#access">
+                  アクセス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>採用情報</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="/recruit_pm">
+                  プロジェクトマネージャー
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_se">
+                  ソリューションエンジニア
+                </a>
+              </li>
+              <li>
+                <a href="/recruit_intern">
+                  インターンシップ生
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-wechat"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-weibo"></i></span>
+                </a>
+                <a class="level-item" href="">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+              </div>
+            </nav>
+            <a href="https://bulma.io" target="_blank">
+              <img src="/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+  
+
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  </body>
+</html>
